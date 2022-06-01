@@ -9,15 +9,20 @@ class UserProfile extends StatelessWidget {
         appBar: AppBar(
             title: const Align(
                 child: Text("Настройки"), alignment: Alignment.center)),
-        body: Column(
-          children: [
-            Container(
-              width: 100,
-              height: 100,
-              child: Placeholder(),
-            ),
-            Text('TEST')
-          ],
-        ));
+        body: Container(
+            width: double.infinity,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  child: Placeholder(),
+                ),
+                Text('Alex'),
+                Text('+375 (29) 000 00 00'),
+                Text('@alex_esc'),
+              ],
+            )));
   }
 }
