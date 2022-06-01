@@ -5,9 +5,10 @@ class UserProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        body: Center(
-      child: Text('TEST'),
-    ));
+    return Scaffold(
+        appBar: AppBar(),
+        body: const Center(
+          child: Text('TEST'),
+        ));
   }
 }
