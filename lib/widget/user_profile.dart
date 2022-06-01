@@ -14,13 +14,25 @@ class UserProfile extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                SizedBox(
+                  height: 30,
+                ),
                 Container(
                   width: 100,
                   height: 100,
                   child: Placeholder(),
                 ),
+                SizedBox(
+                  height: 30,
+                ),
                 Text('Alex'),
+                SizedBox(
+                  height: 10,
+                ),
                 Text('+375 (29) 000 00 00'),
+                SizedBox(
+                  height: 10,
+                ),
                 Text('@alex_esc'),
               ],
             )));
