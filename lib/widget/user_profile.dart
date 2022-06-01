@@ -45,7 +45,10 @@ class _UserLogin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('@alex_esc');
+    return Text(
+      '@alex_esc',
+      style: TextStyle(color: Colors.grey, fontSize: 18),
+    );
   }
 }
 
@@ -56,7 +59,10 @@ class _UserPhone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('+375 (29) 000 00 00');
+    return Text(
+      '+375 (29) 000 00 00',
+      style: TextStyle(color: Colors.grey, fontSize: 15),
+    );
   }
 }
 
@@ -67,7 +73,11 @@ class _UserName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('Alex');
+    return Text(
+      'Alexander Shilenkov',
+      style: TextStyle(
+          color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),
+    );
   }
 }
 
