@@ -7,8 +7,8 @@ class UserProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Настройки'),
-        ),
+            title: const Align(
+                child: Text("Настройки"), alignment: Alignment.center)),
         body: const Center(
           child: Text('TEST'),
         ));
