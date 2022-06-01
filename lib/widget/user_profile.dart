@@ -9,8 +9,15 @@ class UserProfile extends StatelessWidget {
         appBar: AppBar(
             title: const Align(
                 child: Text("Настройки"), alignment: Alignment.center)),
-        body: const Center(
-          child: Text('TEST'),
+        body: Column(
+          children: [
+            Container(
+              width: 100,
+              height: 100,
+              child: Placeholder(),
+            ),
+            Text('TEST')
+          ],
         ));
   }
 }
