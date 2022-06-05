@@ -16,6 +16,13 @@ class UserProfile extends StatelessWidget {
     MenuRowData(Icons.brush, 'Оформление'),
     MenuRowData(Icons.language, 'Язык'),
   ];
+  List<MenuRowData> thridMenuRow = [
+    MenuRowData(Icons.lock_clock, 'Apple Watch'),
+  ];
+  List<MenuRowData> fourthMenuRow = [
+    MenuRowData(Icons.help, 'Помощь'),
+    MenuRowData(Icons.question_answer, 'Вопросы о телеграм'),
+  ];
   UserProfile();
 
   @override
@@ -34,6 +41,10 @@ class UserProfile extends StatelessWidget {
             _MenuWidget(menuRow: firstMenuRow),
             SizedBox(height: 30),
             _MenuWidget(menuRow: secondMenuRow),
+            SizedBox(height: 30),
+            _MenuWidget(menuRow: thridMenuRow),
+            SizedBox(height: 30),
+            _MenuWidget(menuRow: fourthMenuRow),
           ],
         ),
       ),
