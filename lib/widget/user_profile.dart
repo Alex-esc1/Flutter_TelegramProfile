@@ -108,22 +108,33 @@ class _UserInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      width: double.infinity,
-      child: Column(
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [
-          SizedBox(height: 30),
-          _AvatarWidget(),
-          SizedBox(height: 30),
-          _UserName(),
-          SizedBox(height: 10),
-          _UserPhone(),
-          SizedBox(height: 10),
-          _UserLogin(),
-        ],
-      ),
+    return Stack(
+      children: [
+        Container(
+          color: Colors.white,
+          width: double.infinity,
+          child: Column(
+            // ignore: prefer_const_literals_to_create_immutables
+            children: [
+              SizedBox(height: 30),
+              _AvatarWidget(),
+              SizedBox(height: 30),
+              _UserName(),
+              SizedBox(height: 10),
+              _UserPhone(),
+              SizedBox(height: 10),
+              _UserLogin(),
+            ],
+          ),
+        ),
+        Positioned(
+            top: 25,
+            right: 25,
+            child: Text(
+              "Изм.",
+              style: TextStyle(color: Colors.blue, fontSize: 17),
+            ))
+      ],
     );
   }
 }
