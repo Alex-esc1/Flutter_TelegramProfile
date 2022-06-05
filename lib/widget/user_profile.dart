@@ -27,10 +27,7 @@ class UserProfile extends StatelessWidget {
       ),
       body: Container(
         width: double.infinity,
-        child: SingleChildScrollView(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: ListView(
           children: [
             _UserInfo(),
             SizedBox(height: 30),
@@ -38,7 +35,7 @@ class UserProfile extends StatelessWidget {
             SizedBox(height: 30),
             _MenuWidget(menuRow: secondMenuRow),
           ],
-        )),
+        ),
       ),
     );
   }
